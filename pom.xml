@@ -7,7 +7,7 @@
 	<name>Test Project</name>
 	<description>Project for testing random maven and git interfaces.</description>
 	<build>
-		<extensions>
+<!--		<extensions>
 			<extension>
 				<groupId>org.apache.maven.scm</groupId>
 				<artifactId>maven-scm-provider-gitexe</artifactId>
@@ -24,7 +24,7 @@
 				<version>1.0-beta-6</version>
 			</extension>
 		</extensions>
-	</build>
+-->	</build>
 	<distributionManagement>
 		<site>
 			<id>test-project-site</id>
@@ -34,7 +34,7 @@
 	</distributionManagement>
 	<scm>
 		<connection>scm:git:git://github.com/khuxtable/test-project.git</connection>
-		<developerConnection>scm:git:git+ssh://git@github.com/khuxtable/test-project.git</developerConnection>
+		<developerConnection>scm:git:ssh://git@github.com/khuxtable/test-project.git</developerConnection>
 		<url>http://github.com/khuxtable/test-project</url>
 	</scm>
 </project>
