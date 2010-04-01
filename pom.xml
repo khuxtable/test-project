@@ -6,7 +6,7 @@
 	<name>Test Project</name>
 	<description>Project for testing random maven and git interfaces.</description>
 	<build>
-<!--		<extensions>
+		<extensions>
 			<extension>
 				<groupId>org.apache.maven.scm</groupId>
 				<artifactId>maven-scm-provider-gitexe</artifactId>
@@ -23,7 +23,7 @@
 				<version>1.0-beta-6</version>
 			</extension>
 		</extensions>
--->	</build>
+	</build>
 	<distributionManagement>
 		<site>
 			<id>test-project-site</id>
