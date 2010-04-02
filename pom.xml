@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>test-project</groupId>
 	<artifactId>test-project</artifactId>
@@ -18,17 +19,16 @@
 				<version>1.3</version>
 			</extension>
 			<extension>
-				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-scm</artifactId>
-				<version>1.0-beta-6</version>
+				<groupId>org.kathrynhuxtable.maven.wagon</groupId>
+				<artifactId>wagon-gh-pages</artifactId>
+				<version>0.1-SNAPSHOT</version>
 			</extension>
 		</extensions>
 	</build>
 	<distributionManagement>
 		<site>
 			<id>test-project-site</id>
-			<url>scm:git:ssh://git@github.com/khuxtable/test-project.git</url>
-			<!--<url>scm:svn:https://seaglass.googlecode.com/svn/test-project-site</url>-->
+			<url>ghpages:git@github.com/khuxtable/test-project.git:gh-pages</url>
 		</site>
 	</distributionManagement>
 	<scm>
