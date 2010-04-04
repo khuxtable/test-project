@@ -20,15 +20,15 @@
 			</extension>
 			<extension>
 				<groupId>org.kathrynhuxtable.maven.wagon</groupId>
-				<artifactId>wagon-gh-pages</artifactId>
-				<version>0.1-SNAPSHOT</version>
+				<artifactId>wagon-gitsite</artifactId>
+				<version>0.2-SNAPSHOT</version>
 			</extension>
 		</extensions>
 	</build>
 	<distributionManagement>
 		<site>
 			<id>test-project-site</id>
-			<url>ghpages:git@github.com/khuxtable/test-project.git:gh-pages</url>
+			<url>gitsite:git@github.com/khuxtable/test-project.git</url>
 		</site>
 	</distributionManagement>
 	<scm>
