@@ -10,6 +10,7 @@
 
 
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>Test Project - Team list</title>
@@ -17,18 +18,25 @@
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
       @import url("./css/site.css");
+      @import url("./css/highlight.css");
     </style>
     <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
       </head>
   <body class="composite">
+    <div id="page">
     <div id="banner">
-                    <span id="bannerLeft">
+                  <a href="http://www.kathrynhuxtable.org/" id="bannerLeft"  >
+    
+            kathrynhuxtable.org
+    
+            </a>
+                          <div id="bannerRight">
     
             Test Project
     
-            </span>
-                    <div class="clear">
+            </div>
+            <div class="clear">
         <hr/>
       </div>
     </div>
@@ -38,19 +46,21 @@
 
   
     
-  
+            
   
     
             <div class="xleft">
-        Last Published: 2010-04-05
-                      </div>
-            <div class="xright">            <a href="${project.url}">Test Project</a>
+        Version: 0.0.3-SNAPSHOT
+              </div>
+            <div class="xright">            <a href="http://www.kathrynhuxtable.org/blog/projects/" class="externalLink">Kathryn Huxtable's Projects</a>
+            |
+                <a href="http://www.kathrynhuxtable.org" class="externalLink">kathrynhuxtable.org</a>
             
   
 
   
     
-  
+            
   
     
   </div>
@@ -65,92 +75,69 @@
 
   
     
-  
+            
   
     
-                             <h5>Project Documentation</h5>
+                   <h5>Project Documentation</h5>
             <ul>
               
-                
-              
-      
-            
-      
-            
-      
-            
-      
-            
-      
-            
-      
-            
-      
-            
-      
-            
-            
-            
-      
-              
-            <li class="expanded">
-                    <a href="project-info.html">Project Information</a>
-                  <ul>
                   
-    <li class="none">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                        
+                  
+                  <li>
+              <strong>Project Information</strong>
+          <ul>
+              
+    <li>
                     <a href="index.html">About</a>
           </li>
-                  
-    <li class="none">
+              
+    <li>
                     <a href="integration.html">Continuous Integration</a>
           </li>
-                  
-    <li class="none">
+              
+    <li>
                     <a href="dependencies.html">Dependencies</a>
           </li>
-                  
-    <li class="none">
+              
+    <li>
                     <a href="issue-tracking.html">Issue Tracking</a>
           </li>
-                  
-    <li class="none">
+              
+    <li>
                     <a href="mail-lists.html">Mailing Lists</a>
           </li>
-                  
-    <li class="none">
+              
+    <li>
                     <a href="plugin-management.html">Plugin Management</a>
           </li>
-                  
-    <li class="none">
+              
+    <li>
                     <a href="license.html">Project License</a>
           </li>
-                  
-    <li class="none">
+              
+    <li>
                     <a href="project-summary.html">Project Summary</a>
           </li>
-                  
-    <li class="none">
+              
+    <li>
               <strong>Project Team</strong>
         </li>
-                  
-    <li class="none">
+              
+    <li>
                     <a href="source-repository.html">Source Repository</a>
           </li>
-              </ul>
-        </li>
           </ul>
-                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
-            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
-          </a>
-                       
-  
-
-  
-    
-  
-  
-    
-        </div>
+    </li>
+          </ul>
+            </div>
     </div>
     <div id="bodyColumn">
       <div id="contentBox">
@@ -158,7 +145,28 @@
 <p>A successful project requires many people to play many roles. Some members write code or documentation, while others are valuable as testers, submitting patches and suggestions.</p>
 <p>The team is comprised of Members and Contributors. Members have direct access to the source of a project and actively evolve the code-base. Contributors improve the project through submission of patches and suggestions to the Members. The number of Contributors to the project is unbounded. Get involved today. All contributions to the project are greatly appreciated.</p>
 <div class="section"><h3>Members</h3>
-<p>There are no developers working on this project.</p>
+<p>The following is a list of developers with commit privileges that have directly contributed to the project in one way or another.</p>
+<table class="bodyTable"><tr class="a"><th>Id</th>
+<th>Name</th>
+<th>Email</th>
+<th>URL</th>
+<th>Organization</th>
+<th>Organization URL</th>
+<th>Roles</th>
+<th>Time Zone</th>
+<th>Actual Time (GMT)</th>
+</tr>
+<tr class="b"><td><a name="khuxtable"></a>khuxtable</td>
+<td>Kathryn Huxtable</td>
+<td><a href="mailto:kathryn@kathrynhuxtable.org" class="externalLink">kathryn@kathrynhuxtable.org</a></td>
+<td><a href="http://www.kathrynhuxtable.org" class="externalLink">http://www.kathrynhuxtable.org</a></td>
+<td>kathrynhuxtable.org</td>
+<td><a href="http://www.kathrynhuxtable.org" class="externalLink">http://www.kathrynhuxtable.org</a></td>
+<td>architect, developer</td>
+<td>-6</td>
+<td><span id="developer-0">-6</span></td>
+</tr>
+</table>
 </div>
 <div class="section"><h3>Contributors</h3>
 <p>There are no contributors listed for this project. Please check back again later.</p>
@@ -176,6 +184,7 @@ function offsetDate(id, offset) {
 }
 
 function init(){
+    offsetDate('developer-0', '-6');
 }
 
 window.onLoad = init();
@@ -186,21 +195,44 @@ window.onLoad = init();
       <hr/>
     </div>
     <div id="footer">
-      <div class="xright">&#169;  
+      <div class="xleft">
+        &#169;  
           2010
     
+          kathrynhuxtable.org
           
   
 
   
     
-  
+            
   
     
-  </div>
+              
+  
+
+  
+    
+            
+  
+    
+            <div id="lastPublished">
+        Last Published: 07 Apr 2010
+              </div>
+            </div>
+      <div class="xright">                              <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img class="poweredBy" 
+                 alt="Built by Maven" 
+                 src="./images/logos/maven-feather.png" 
+                 width="90"
+                 height="30"
+                 border="1" />
+          </a>
+            </div>
       <div class="clear">
         <hr/>
       </div>
+    </div>
     </div>
   </body>
 </html>
