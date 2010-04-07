@@ -6,6 +6,32 @@
 	<version>0.0.3-SNAPSHOT</version>
 	<name>Test Project</name>
 	<description>Project for testing random maven and git interfaces.</description>
+    <developers>
+        <developer>
+            <id>khuxtable</id>
+            <name>Kathryn Huxtable</name>
+            <email>kathryn@kathrynhuxtable.org</email>
+            <url>http://www.kathrynhuxtable.org</url>
+            <organization>kathrynhuxtable.org</organization>
+            <organizationUrl>http://www.kathrynhuxtable.org</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>-6</timezone>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>none</distribution>
+        </license>
+    </licenses>
+    <organization>
+        <name>kathrynhuxtable.org</name>
+        <url>http://www.kathrynhuxtable.org</url>
+    </organization>
 	<build>
 		<extensions>
 			<extension>
@@ -21,7 +47,7 @@
 			<extension>
 				<groupId>org.kathrynhuxtable.maven.wagon</groupId>
 				<artifactId>wagon-gitsite</artifactId>
-				<version>0.2-SNAPSHOT</version>
+				<version>0.2</version>
 			</extension>
 		</extensions>
 	</build>

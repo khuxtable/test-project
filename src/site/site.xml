@@ -1,0 +1,24 @@
+<project name="Test Project">
+    <publishDate position="navigation-bottom" format="dd MMM yyyy" />
+    <version position="left" />
+    <bannerLeft>
+        <name>kathrynhuxtable.org</name>
+        <href>http://www.kathrynhuxtable.org/</href>
+    </bannerLeft>
+    <bannerRight>
+        <name>Test Project</name>
+    </bannerRight>
+    <skin>
+        <groupId>org.kathrynhuxtable.maven.skins</groupId>
+        <artifactId>green-site-skin</artifactId>
+        <version>1.0</version>
+    </skin>
+    <body>
+        <links>
+            <item name="Kathryn Huxtable's Projects" href="http://www.kathrynhuxtable.org/blog/projects/" />
+            <item name="kathrynhuxtable.org" href="http://www.kathrynhuxtable.org" />
+        </links>
+
+        <menu ref="reports"/>
+    </body>
+</project>
